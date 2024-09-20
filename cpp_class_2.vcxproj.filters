@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{d13173d3-aa4d-4f16-942c-7dfe7234ca45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Person">
+      <UniqueIdentifier>{e5c67402-0e2c-484f-9580-a89259ab1b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{363b974c-f66d-4385-920a-39ea3911883a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flat">
+      <UniqueIdentifier>{28d716c4-74f8-4146-8f82-d1c7eddcc6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="House">
+      <UniqueIdentifier>{929dd60c-5864-44d1-9eec-dbd4980d5be6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Person</Filter>
+    </ClCompile>
+    <ClCompile Include="flat.cpp">
+      <Filter>Flat</Filter>
+    </ClCompile>
+    <ClCompile Include="house.cpp">
+      <Filter>House</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="person.h">
+      <Filter>Person</Filter>
+    </ClInclude>
+    <ClInclude Include="lib.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="flat.h">
+      <Filter>Flat</Filter>
+    </ClInclude>
+    <ClInclude Include="house.h">
+      <Filter>House</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
