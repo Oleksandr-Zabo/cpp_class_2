@@ -7,6 +7,7 @@ private:
 	int _age;
 	
 public:
+	//constructor
 	Person();
 	Person(char* name);
 	Person(char* name, char* s_name);
@@ -16,8 +17,11 @@ public:
 	Person(string name, string s_name);
 	Person(string name, string s_name, int age);
 
+	
+	//copy constructor
 	Person(Person& person);
 
+	//destructor
 	~Person();
 
 	void person_info();

@@ -27,18 +27,24 @@ Flat::~Flat() {
 }
 
 void Flat::print_flat() {
+
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 14);
+
 	cout << "Flat # " << _num_flat << endl;
 	cout << "Floor # " << _num_floor << endl;
 	if (_persons != nullptr) {
-		for (size_t i = 0; i < _num_person_in_flat; i++)
-		{
+		for (int i = 0; i < _num_person_in_flat; i++) {
+			SetConsoleTextAttribute(hConsole, 7);
 			cout << "Person # " << i + 1 << " :" << endl;
 			_persons[i].person_info();
 		}
 	}
 	else {
-		cout << "Flat is empty(0 persons)";
+		SetConsoleTextAttribute(hConsole, 12);
+		cout << "Flat is empty (0 persons)" << endl;
 	}
+	SetConsoleTextAttribute(hConsole, 7);
 	cout << endl;
 }
 
