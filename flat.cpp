@@ -27,8 +27,8 @@ Flat::~Flat() {
 }
 
 void Flat::print_flat() {
-
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	
 	SetConsoleTextAttribute(hConsole, 14);
 
 	cout << "Flat # " << _num_flat << endl;

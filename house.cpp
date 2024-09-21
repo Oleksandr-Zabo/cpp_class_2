@@ -42,7 +42,9 @@ House::~House() {
 
 void House::print_house() {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
 	SetConsoleTextAttribute(hConsole, 11);
+
 	cout << "House information: " << endl;
 	cout << "Adress: " << _adress << ", " << _num_house << endl;
 	cout << "Flats: " << endl;

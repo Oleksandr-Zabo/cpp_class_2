@@ -1,5 +1,6 @@
 #include "person.h"
 
+
 Person::Person() {
     _name = nullptr;
     _s_name = nullptr;
@@ -64,6 +65,7 @@ Person::~Person() {
 
 void Person::person_info() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    
     if (_name != nullptr && _s_name != nullptr) {
         SetConsoleTextAttribute(hConsole, 10);
         cout << "Name: " << _name << endl;
